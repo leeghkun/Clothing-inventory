@@ -6,7 +6,7 @@ def create_db():
     
     # Employee table
     cur.execute("""CREATE TABLE IF NOT EXISTS employee(
-        eid INTEGER PRIMARY KEY AUTOINCREMENT,
+        eid TEXT PRIMARY KEY,
         name text,
         email text,
         gender text,
@@ -39,6 +39,18 @@ def create_db():
         qty text,
         status text,
         reorder_level integer
+    )""")
+    con.commit()
+
+    # Create attendance table
+    cur.execute("""CREATE TABLE IF NOT EXISTS attendance(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        emp_id text,
+        date text,
+        time_in text,
+        time_out text,
+        hours_worked real,
+        status text
     )""")
     con.commit()
 

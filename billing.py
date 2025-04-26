@@ -350,8 +350,8 @@ class billClass:
     def bill_top(self):
         self.invoice=int(time.strftime("%H%M%S"))+int(time.strftime("%d%m%Y"))
         bill_top_temp=f'''
-\t\tXYZ-Inventory
-\t Phone No. 9899459288 , Delhi-110053
+\t\tClothing-Inventory-Reciept
+\t Phone No. 9899459288 , ph+63
 {str("="*46)}
  Customer Name: {self.var_cname.get()}
  Ph. no. : {self.var_contact.get()}

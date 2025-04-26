@@ -1,0 +1,6 @@
+Pillow==10.0.0
+sqlite3
+opencv-python==4.11.0.86
+pyzbar==0.1.9
+qrcode==8.0.0
+numpy>=1.21.2 
